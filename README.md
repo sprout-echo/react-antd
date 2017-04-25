@@ -8,3 +8,7 @@ a back-stage management templet
 git clone https://github.com/sprout-echo/react-antd.git
 webpack
 npm run dev
+```
+项目开发
+  ## 安装项目依赖
+```npm install --save antd react react-dom 
