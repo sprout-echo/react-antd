@@ -1,0 +1,88 @@
+html,body,div,h5,h6,p,ul,li{
+  margin:0px;
+  padding:0px;
+}
+#app{
+  //左侧导航固定宽度
+  #leftMenu{
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom:0;
+    background:#333;
+    width:200px;
+    box-sizing: border-box;
+  }
+  //logo
+  #logo{
+    display: block;
+    margin:20px auto;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    transition: all 0.8s;
+  }
+  #logo:hover{
+    transform: rotate(720deg);
+  }
+  h3{
+    text-align: center;
+    color:#ff0;
+  }
+  h3 b{
+    font-size: 20px;
+    color: #c33;
+  }
+  //右侧宽度自适应
+  #rightWrap{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+  .right-box{
+    box-sizing: border-box;
+    padding: 20px 20px 0;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+  #search{
+    width: 300px;
+    border-radius: 6px;
+    position: absolute;
+  }
+  .mainDiv{
+    width: 280px;
+    height:80px;
+    border-radius: 3px;
+    float: left;
+    background:#01a89e;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .sumS{
+    background:#f15822;
+  }
+  .newS{
+    background:#f9a619;
+  }
+  .yuS{
+    background:#6d509e;
+  }
+  #rightWrap .ant-menu-submenu {
+      float: right;
+  }
+}
