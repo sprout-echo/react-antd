@@ -68,9 +68,10 @@ class Sider extends React.Component {
           </Menu>
         </div>
         <div id="rightWrap">
-          <Menu mode="horizontal">
+          <Menu mode="horizontal" id="rightHead">
             <Input.Group>
-              <Input id="search"/>
+              <Icon type="search" id="searchIcon"/>
+              <Input id="search" placeholder="请输入..."/>
             </Input.Group>
             <SubMenu title={<span><Icon type="user" />{ this.state.username }</span>}>
                 <Menu.Item key="setting:1">退出</Menu.Item>
@@ -90,6 +91,7 @@ ReactDOM.render(
   (<Router history={hashHistory} >
     <Route path="/" component={Sider}>
       <IndexRoute component={Main} />
+      <Route path="Main" component={Main}/>
       <Route path="Carousel" component={Carousel} />
       <Route path="Progress" component={Progress} />
     </Route>

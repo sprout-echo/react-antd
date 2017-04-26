@@ -45,6 +45,7 @@ html,body,div,h5,h6,p,ul,li{
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    background:#f5f5f5;
   }
   .right-box{
     box-sizing: border-box;
@@ -54,16 +55,23 @@ html,body,div,h5,h6,p,ul,li{
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-x: hidden;
     overflow-y: auto;
   }
+  #searchIcon{
+    position: absolute;
+    top:8px;
+    left:10px;
+  }
   #search{
+    margin:10px;
     width: 300px;
     border-radius: 6px;
     position: absolute;
   }
   .mainDiv{
-    width: 280px;
-    height:80px;
+    width: 250px;
+    height:75px;
     border-radius: 3px;
     float: left;
     background:#01a89e;
@@ -73,6 +81,84 @@ html,body,div,h5,h6,p,ul,li{
     padding-top: 10px;
     text-align: center;
   }
+  #rightCont{
+    position: absolute;
+    top:15px;
+    width: 100%;
+  }
+  #tabCard{
+    width: 38%;
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    margin:20px 10px;
+    background:#fff;
+    float: left;
+  }
+  #progressCont{
+    float: left;
+    width: auto;
+    border-radius: 6px;
+    background:#555;
+    color:#fff;
+    padding: 30px;
+    margin:20px 10px;
+  }
+  #stepCont{
+    margin:20px 10px;
+    float: left;
+    width: 25%;
+    background:#fff;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  #CollapseCont{
+    width: 27%;
+    height:auto;
+    margin:10px 10px;
+    float:left;
+    z-index: 5;
+  }
+  #lineProgress{
+    float: left;
+    width: 43%;
+    margin-top: -170px;
+    margin-left: 24%;
+    background:#ccc;
+    border-radius: 6px;
+    border:1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  #dataCont{
+    width: 25%;
+    float: left;
+    background:#fff;
+    border:1px solid #ccc;
+    margin:5px 20px;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  #cardPerson{
+    width: 22%;
+    background:#006890;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 50px 20px;
+    float:left;
+    border-radius: 6px;
+    margin:-170px 10px;
+    z-index: 2;
+  }
+  #line-card{
+    width: 100%;
+    border:0px;
+    height:1px;
+    background:#fff;
+  }
+  .ant-calendar-picker-input{
+    width: 100px;
+  }
   .sumS{
     background:#f15822;
   }
@@ -81,6 +167,10 @@ html,body,div,h5,h6,p,ul,li{
   }
   .yuS{
     background:#6d509e;
+    margin-right: 10px;
+  }
+  #rightHead{
+    background:#ddd;
   }
   #rightWrap .ant-menu-submenu {
       float: right;
