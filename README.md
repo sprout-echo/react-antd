@@ -14,3 +14,8 @@ npm run dev
 ```javascript
 npm install --save antd react react-dom 
 ```
+
+### 安装其他依赖
+```javascript
+npm install
+```
